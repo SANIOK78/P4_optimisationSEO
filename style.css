@@ -679,7 +679,17 @@ a {
 p {
     font-size: 11px;
 }
-
+.citation{
+    font-size: 22px;
+    padding:0;
+    margin: 0;
+}
+.auteur{
+    font-size: 22px;
+    color: #888!important;
+    padding:0;
+    margin: 0;
+}
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -818,11 +828,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/webdesign-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
