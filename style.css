@@ -18,15 +18,6 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
-
 .bloc {
     width: 100%;
     clear: both;
@@ -105,14 +96,6 @@ a:hover {
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc .icon-round,
-.d-bloc .icon-square,
-.d-bloc .icon-rounded,
-.d-bloc .icon-semi-rounded-a,
-.d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .divider-h span {
@@ -196,7 +179,7 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
-}
+} 
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -308,7 +291,9 @@ a:hover {
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px;
+    /* min-width: 100px; */
+    height: 40px;
+    width: 100%;
 }
 
 .nav-center .navbar-brand img {
@@ -480,7 +465,7 @@ button {
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 80px!important;
 }
 
 .sm-shadow {
@@ -651,7 +636,21 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    /* color: #575757!important; */
+    color: #000!important;
+    font-size: 20px;
+}
+
+img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* le logo */
+.center-block{
+    width: 50px!important;
+    height: 50px!important;
 }
 
 .container {
@@ -677,18 +676,14 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 .citation{
-    font-size: 22px;
-    padding:0;
-    margin: 0;
+    font-size: 20px;
 }
 .auteur{
-    font-size: 22px;
-    color: #888!important;
-    padding:0;
-    margin: 0;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 .tight-width-whitespace {
     max-width: 600px;
@@ -715,19 +710,20 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
+    margin: 20px 0 50px!important;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -749,8 +745,11 @@ h4 {
     color: #FFFFFF!important;
 }
 
+/* images portfolio */
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-row {
@@ -786,6 +785,7 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+   
 }
 
 .btn-atomic-tangerine {
@@ -858,7 +858,7 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -868,7 +868,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-}
+} */
 
 @media (max-width: 991px) {
     .container {
@@ -882,10 +882,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /* .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -894,8 +894,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /* padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right); */
     }
 }
 
@@ -1036,12 +1036,27 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .contact{
+        text-align: left!important;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    p{
+        font-size: 16px;
+    }
+    .citation{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .col-sm-6{
+        margin-bottom: 50px!important;
     }
 }
 
