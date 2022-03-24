@@ -1,22 +1,33 @@
 <!doctype html>
-<html lang="fr-FR">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<!-- La description -->
 		<meta name="description" content="Contactez l'agence webdesign La Panthère pour toutes questions 
 		concernant la réalisation de votre site internet personnalisé ">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.css">		
-		<!-- indexation de la page -->
+
+		<!-- Precharger les feilles de style  -->
+		<link rel="preload" href="./css/bootstrap.css" as="style">
+		<link  rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="preload" href="./css/font-awesome.min.css" as="style">
+		<link  rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+		<link rel="preload" href="./css/et-line.min.css" as="style">
+		<link  rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+		
+		<link rel="preload" href="style.min.css" as="style">
+		<link rel="stylesheet" type="text/css" href="style.min.css">
+		
+		<!-- Titre avec mot-clé -->
+		<title>Entreprise webdesign Lyon - La Panthère!</title>
+
+		<!-- indixation de la page -->
 		<meta name="robots" content="index, fallow">
 		<meta name="googlebot" content="index, fallow">
-		<!-- Titre de la page -->
-		<title>Contact : La Panthère - Agence webdesign Lyon</title>		
-		<!-- Les scripts -->
+
+		<!-- différer l'exécution des script à la fin du chargement du document. -->
 		<script src="./js/jquery-2.1.0.js" defer></script>
 		<script src="./js/bootstrap.js" defer></script>
 		<script src="./js/blocs.js" defer></script>
@@ -123,7 +134,9 @@
 			<!-- bloc-7 END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<button class="bloc-button btn btn-d scrollToTop" aria-label="bouton permetant la navigation" onclick="scrollToTarget('1')">
+				<span class="fa fa-chevron-up"></span>
+			</button>
 			<!-- ScrollToTop Button END-->
 
 
@@ -163,8 +176,7 @@
 											<span class="fa fa-instagram icon-md"></span>
 										</a>
 									</div>
-								</div>
-								
+								</div>	
 							</div>
 							<!-- rm des backlinks inutile: partenaires & annuaires -->
 							
@@ -173,10 +185,7 @@
 				</div>
 			</div>
 			<!-- Footer - bloc-8 END -->
-
 		</div>
 		<!-- Principal conteneur END -->
-		
-	
 	</body>
 </html>
