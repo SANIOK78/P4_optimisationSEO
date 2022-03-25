@@ -829,11 +829,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/webdesign-banniere.jpg");
+    background-image: url("img/webdesign-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/presentation.webp");
 }
 .titre-footer{
     font-size: 20px;
