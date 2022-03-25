@@ -10,10 +10,12 @@
 		<link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
 
 		<!-- Precharger les feilles de style  -->
-		<link rel="preload" href="./css/bootstrap.css" as="style">
-		<link  rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="preload" href="./css/bootstrap.min.css" as="style">
+		<link  rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
 		<link rel="preload" href="./css/font-awesome.min.css" as="style">
 		<link  rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+
 		<link rel="preload" href="./css/et-line.min.css" as="style">
 		<link  rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 		
@@ -28,11 +30,11 @@
 		<meta name="googlebot" content="index, fallow">
 
 		<!-- différer l'exécution des script à la fin du chargement du document. -->
-		<script src="./js/jquery-2.1.0.js" defer></script>
-		<script src="./js/bootstrap.js" defer></script>
-		<script src="./js/blocs.js" defer></script>
-		<script src="./js/jquery.touchSwipe.js" defer></script>
-		<script src="./js/gmaps.js" defer></script>
+		<script src="./js/jquery-2.1.0.min.js" defer></script>
+		<script src="./js/bootstrap.min.js" defer></script>
+		<script src="./js/blocs.min.js" defer></script>
+		<script src="./js/jquery.touchSwipe.min.js" defer></script>
+		<script src="./js/gmaps.min.js" defer></script>
 	</head>
 
 	<body>
@@ -94,7 +96,7 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1" novalidate >
+							<form id="form_1" >
 								<div class="form-group">
 									<label for="name">Nom</label>															
 									<input id="name" name="name" type="text" class="form-control" aria-invalid="false" required />
